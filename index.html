@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQI</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: right;
+            background-color: #fdfdfa;
+           
+           
+           
+            
+            
+        }
+        .nav li{
+            display: inline-block;
+            list-style: none;
+            color: #666666;
+            font-family: sans-serif;
+font-size: 20px;
+font-weight: 50;
+
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;          
+            text-align: center;
+            background-color: #FFFFFF ;
+        
+        }
+
+        .flex1 h1{
+            color: 
+#000E42;
+font-weight: 700px;
+font-size: 64px;
+ font-family:sans-serif 
+        }
+
+        .flex1 p{
+            color: #474747;
+            font-family: sans-serif;
+            font-size: 16px;
+            font-weight: 500px;
+
+        }
+
+.flex1 button{
+    background-color: #00208A;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: white;
+    border : none;
+    line-height: 23.8px;
+
+}
+
+
+
+
+        .flex22{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 70px 50px 70px;
+        }
+
+        .flex2 h2{
+            color: #000E54;
+            font-size: 20px;
+            font-family: poppins, sans-serif;
+            font-weight: 700;
+        }
+
+        .flex2 p{
+            color: #666666;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: 500;
+           
+        }
+
+        .flex202 h2{
+            color: #000E54;
+            font-size: 20px;
+            font-family: poppins, sans-serif;
+        }
+
+        .flex202 p{
+            color: #666666;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+
+        .flex2022 h2{
+            color: #000E54;
+            font-size: 20px;
+            font-family: poppins, sans-serif;
+        }
+        .flex2022 p{
+            color: #666666;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+        
+        
+        .flex5{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+            color: #26364E;
+            font-size: 16px;
+            font-family: sans-serif;
+
+        }
+        .flex6{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+            color: #333333;
+            font-family: sans-serif; 
+            font-size: 18px;
+        }
+        .flex7{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+            color:#666666; 
+            font-family: sans-serif;
+            font-size: 16px;
+
+        }
+        .flex8{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 0;
+             color:#666666; 
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+        .flex9{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+             color:#666666; 
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+        .flex10{
+             display: flex;
+            justify-content: space-around;
+            align-items: center;
+             color:#666666; 
+            font-family: sans-serif;
+            font-size: 16px;
+
+        }
+        .flex11{
+             display: flex;
+            justify-content: space-around;
+            align-items: center;
+             color:#666666; 
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        .flex12{
+             display: flex;
+            justify-content: space-around;
+            align-items: center;
+             color:#666666; 
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        .flex13{
+             display: flex;
+            justify-content: space-around;
+            align-items: center;
+             color:#666666; 
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+       .software{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        font-family: sans-serif;
+       }
+
+       .software p{
+        color: #000000 ;
+        font-size: 14px;
+        font-family:sans-serif;
+
+       }
+
+       .softy{
+        border: 1px rgb(152, 187, 216) ;
+        border-width: 90px;
+        border-radius: 20px;
+        background-color: #88C4DD;
+    
+       }
+
+         .softyy{
+          border: 1px solid rgb(247, 247, 199) ;
+          border-width: 90px;
+          border-radius: 20px;
+          background-color: #EEEFBD;
+         
+         }
+
+       .software h3{
+        color: #333333 ;
+        font-family:sans-serif;
+        font-size: 28px;
+       }
+
+       .software p{
+        color: #000000 ;
+        font-size: 14px;
+        font-family:sans-serif;
+       }
+
+       .software2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        font-family: sans-serif;
+       }
+
+       .software2 h3{
+        color: #333333 ;
+        font-size: 28px;
+        font-family:sans-serif;
+        
+       }
+
+       .softa{
+        border: 1px solid rgb(247, 222, 222) ;
+        border-width: 90px;
+        border-radius: 20px;
+        background-color: #E0D5C0;
+       }
+         .softa2{
+          border: 1px solid rgb(233, 226, 226) ;
+          border-width: 90px;
+          border-radius: 20px;
+          background-color: #e3e0c8;
+         }
+
+         .alumi{
+            color: #333333;
+            font-size: 20px;
+            font-family:  sans-serif;
+            margin-left: 100px;
+         }
+        
+       .tour{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+        background-color: blueviolet;
+       }
+
+       .tourr p{
+        color: #FFFFFF;
+        font-size: 16px;
+        font-family: sans-serif;
+       }
+       
+       .sqi{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        color: #333333;
+        font-size: 14px;
+       }
+
+       .faq{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px 0px 0px 0px;
+        background-color: #000E54;
+       }
+
+       .faqq{
+        color: #FFFFFF ;
+        font-size: 20px;
+        font-family: sans-serif;
+       }
+
+       .faqqi p{
+        color: #FFFFFF ;
+        font-size: 16px;
+        font-family: sans-serif;
+       }
+       .faq h5{
+        color: #D39B00;
+        font-size: 20px;
+        font-family: sans-serif;
+       }
+
+       .faqq a{
+        color: #D0A73F;
+        font-size: 20px;
+        font-family: sans-serif;
+       }
+
+
+
+
+        .join h4{
+          color: #FFFFFF;
+            font-size: 14px;
+            font-family: sans-serif;
+            margin-left: 100px;
+       }
+
+       .join h2{
+        color: 
+#FFFFFF;
+            font-size: 56px;
+            font-family: sans-serif;
+             margin-left: 100px;
+       }
+         .join p{
+          color: #FFFFFF;
+                font-size: 14px;
+                font-family: sans-serif;
+                 margin-left: 100px;
+         }
+
+         .join{
+            background-color: #00208A;
+            margin: 0px 0px 0px 0px;
+         }
+
+         .join button{
+            background-color: #00208A ;
+            font-size: 14px;
+            font-family: sans-serif;
+            color: #FFFFFF;
+             margin-left: 100px;
+             border-radius: 20px;
+            border-width: 10px;
+         }
+
+        
+
+.latest{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+}
+
+.latest h2{
+    color: #000000;
+            font-size: 40px;
+            font-family: sans-serif;
+}
+
+.latest button{
+    background-color: #00208A ;
+            font-size: 14px;
+            font-family: sans-serif;
+            color: #FFFFFF;
+            border : none;
+            line-height: 23.8px;
+}
+
+.student{
+     display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+            color:#666666 ;
+            font-size: 14px;
+            font-family: sans-serif;
+            margin: 0px 100px 0px 100px;
+            background-color: #f2f4f5;
+}
+
+.student h4{
+    color: #130808 ;
+            font-size: 16px;
+            font-family: sans-serif;
+}
+
+.stud{
+    border: 1px solid white;
+    background-color: white;
+}
+.studd{
+    border: 1px solid white;
+    background-color: white;
+}
+
+.studdd{
+    border: 1px solid white;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+.learn{
+        display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 50px;
+}
+
+.learn p{
+    color: #666666;
+            font-size: 14px;
+            font-family: sans-serif;
+}
+
+.learn h3{
+    color:#333333 ;
+            font-size: 20px;
+            font-family: sans-serif;
+}
+
+
+        
+.physical{
+        display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 20px;
+}
+        .img3{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 120px;
+        }
+        .img4{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+             margin-left: 120px;
+        }
+        .img5{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+             margin-left: 120px;
+        }
+
+       
+
+
+        .alone{
+            color: #050754;
+            font-family: sans-serif;
+            font-size: 20px;
+            margin: 0px 0px 0px 70px;
+        }
+
+        .look h2{
+            color: #333333;
+            font-size: 48px;
+            font-family: poppins, sans-serif;
+        }
+        .look p{
+            color: #666666;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+
+        .look a{
+            color: #00208A;
+            font-size: 14px;
+            font-family: sans-serif;
+            text-decoration: underline;
+        }
+        .look{
+            margin-left: 100px;
+        }
+
+        .testi h2{
+            color: #333333 ;
+            font-size: 48px;
+            font-family: sans-serif;
+        }
+        .testi p{
+            color: #474747 ;
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+
+        .testi{
+            margin-left: 100px;
+        }
+
+        .footer{
+             display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        font-family: sans-serif;
+        }
+
+        .footer h6{
+            color: #333333;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+
+        .footer h3{
+            color: #00208A;
+            font-size: 19px;
+            font-family: sans-serif;
+        }
+
+        .footer h4{
+            color:#333333;
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+
+        .diva{
+            color: 
+#FFFFFF;
+            background-color: #030444;
+            font-size: 14px;
+            font-family: sans-serif;
+            border: 2px;
+            
+        }
+
+        .aro{
+          justify-content: right;
+        }
+
+
+    </style>
+
+    </head>
+    <body>
+        <nav class="nav">
+        <img src="https://edu.sqi.ng/wp-content/uploads/2019/01/co.jpg" alt=""  width="100" height="100">
+        <ul style="word-spacing: 20px;">
+            <li><a href="">About</a></li>
+             <li><a href="">Programmes</a></li>
+              <li><a href="">Admission</a></li>
+               <li><a href="">E-Portal</a></li>
+                <li><a href="">SQI Scholarship</a></li>
+                 <li><a href="">News</a></li>
+                 <li><a href="">Contact</a></li>
+                 <hr>
+        </ul>
+    </nav>
+    <div class="header">
+    <div class="flex1">
+        <h1>Study to <br>become a <br>global talent</h1>
+         <p>Learn new tech skills using a world-class curriculum from top <br>  industry experts in an accredited institution.</p>
+         <button style="width: 100px;height: 50px; border-radius: 20px;">Start now</button>
+         </div>
+         <div>
+        <img src="https://sqi.edu.ng/wp-content/uploads/2023/06/bg-header-sqi-1.png" alt="">
+
+    </div>
+    </div>
+
+    <div>
+        
+    </div>
+
+    <div class="alone">
+        <h1>Start here. Change the world.</h1>
+    </div>
+<div class="flex22">
+    <div class="flex2">
+        <img src="https://sqi.edu.ng/wp-content/uploads/2023/06/college.jpg" alt="" width="350" height="300">
+         <h2>Nation Diploma (ND)/National<br> Innovative Diploma (NID)</h2>
+         <p>The National Diploma (ND) offered at SQI<br> College of ICT is a 2 year approved <br>academic program of the National Board for <br>Technical Education (NBTE) and approved by<br> the Federal Ministry of Education</p>
+         </div>
+         <div class="flex202">
+        <img src="https://sqi.edu.ng/wp-content/uploads/2023/06/prof.jpg" alt=""  width="350" height="300">
+         <h2>Professional Diploma<br> Certificate</h2>
+<p>The Professional Certificate Program is 1 year<br> practical training with wide range of edge-<br>cutting IT certification courses offered in SQI<br> College of ICT to<br> people who want to advance their career.</p>
+    </div>
+    <div class="flex2022">
+        <img src="https://sqi.edu.ng/wp-content/uploads/2023/06/certificate.jpg"  width="350" height="300">
+<h2>Certificate Program</h2>
+<p>The Certificate Program is a short-term<br> training, 2 weeks to 6 months with a wide<br> range of edge-cutting IT certification courses<br> offered in SQI College of ICT to people who<br> want to advance their careers.</p>
+    
+    </div>
+    </div>
+
+   
+    <div class="flex5">
+     <p><b><a href="">Learn more</a></a></b></p>
+     <p><b><a href="">Learn more</a></a></b></p>
+     <p><b><a href="">Learn more</a></a></b></p>
+      
+    </div>
+    
+    <div class="flex6">
+        <strong>NATIONAL DIPLOMA COURSES</strong>
+        <strong>PROFESSIONAL DIPLOMA COURSES</strong>
+        <strong>CERTIFICATE PROGRAM</strong>
+    </div>
+
+    <div class="flex7">
+        <p><u><b>Duration:</b> 2 Years</u></p>
+        <p><u><b>Duration:</b> 4-12 month courses</u></p>
+         <p><u><b>Duration:</b> 2 weeks to 10 months</u></p>
+
+    </div>
+
+    <div class="flex8">
+        <p><u><b>Certificate:</b> Both National Diploma and<br> Professional Diploma.</u></p>
+        <p><u><b>Certificate:</b> Professional Diploma</u></p>
+         <p><u><b>Certificate:</b> Certificate Program</u></p>
+    </div>
+    <div class="flex9">
+    <p><b><u>Skills:</b> Academic Institution recognized<br> skills and In-demand professional<br> skills.</u></p>
+    <p><b><u>Skills:</b>  In-demand professional skills</u></p>
+    <p><b><u>Skills:</b>  In-demand professional skills</u></p>
+    </div>
+
+     <div class="flex10">
+    <p><b><u>Entry Requirements: 120 min in JAMB,<br>
+5 Credits in O-Level and Your passion</u></b></p>
+    <p><b><u>Entry Requirements: Your passion</u></b></p>
+    <p><b><u>Entry Requirements: Your passion</u></b></p>
+
+    </div>
+
+     <div class="flex11">
+    <p><b><u>Required Hardware:</b> (usually Laptop)</u></p>
+    <p><b><u>Required Hardware:</b> (usually Laptop)</u></p>
+    <p><b><u>Required Hardware:</b> (usually Laptop)</u></p>
+    </div>
+
+     <div class="flex12">
+    <p><b><u>Direct Entry:</b> Yes (Any University)</u></b></p>
+    <p><b><u>Transcript & Internship:</b> Yes.</u></p>
+    <p><b><u>Transcript & Internship:</b> Yes.</u></p>
+    </div>
+
+     <div class="flex13">
+    <p><b><u>Transcript & Internship:</b> Yes</u></p>
+    <p><b><u>Access to Alumni Network and<br> Opportunities:</b> Yes.</u></p>
+    <p><b><u>Access to Alumni Network and<br> Opportunities:</b> Yes.</u></p>
+    </div>
+
+<div class="look">
+    <h2>Our Top Courses</h2>
+    <p>Take a look at some of our popular courses</p>
+    <a href="">view all courses</a>
+    </div>
+
+  
+    <div class="software">
+        <div class="softy">
+   <img src="https://sqi.edu.ng/wp-content/uploads/2023/01/software-engineering-630x330-1.webp" alt="" width="450" height="300">
+   <h3>Software Engineering</h3>
+   <p>Software Engineering is one of the most in-demand jobs<br> across the globe today.<br>
+<br>Software Engineers are also known as programmers,<br> developers or coders. They are the ones behind all the<br> apps and software you use today either on your ….</p>
+  </div>
+  <div class="softyy">
+    <img src="https://sqi.edu.ng/wp-content/uploads/2023/01/DATA-SQI.jpg" alt="" width="450" height="300">
+    <h3>Data Science & Analysis</h3>
+    <p>The eruption of data is transforming indiviuals and<br> businesses. Companies either big or small are now<br> expecting their business decisions to be based on<br> data-led insight.<br>
+Data specialists have a tremendous impact on…</p>
+  </div>
+  </div>
+
+  <div class="software2">
+    <div class="softa">
+    <img src="https://sqi.edu.ng/wp-content/uploads/2023/03/product.jpg" alt="" width="450" height="300"> 
+<h3>UI/UX – Product Design</h3>
+<p>More than ever before individuals and businesses are<br> relying on digital products and services. From online<br> meeting tools to finance, from e-commerce platforms<br> to healthcare and food apps.<br>
+<br>Making an intuitive digital product design is even more<br> import at this time as it…</p>
+</div>
+<div class="softa2">
+    <img src="https://sqi.edu.ng/wp-content/uploads/2023/03/digital-literacy.jpg" alt="" width="450" height="300">
+    <h3>Digital Literacy</h3>
+    <p>This course is designed to prepare you for success in a<br> modern world full of computers—not only the traditional<br> computers such as desktop and notebook PCs but also<br> computers that you interact with in other places too,<br> like your bank’s ATM or your employer’s computerized<br> cash register.<br>
+In this course, you will learn about the technologies that<br> drive our computerized society…</p>
+</div>
+</div>
+
+ <div class="alumi">       
+<h2>Our alumni work at world-class<br> companies around the world including</h2>
+</div>
+
+<div class="img3">
+    <img src="https://edu.sqi.ng/wp-content/uploads/2023/03/google.png" alt="" width="150" height="100">
+    <img src="https://edu.sqi.ng/wp-content/uploads/2023/03/Interswitch.png" alt="" width="150" height="100">
+    <img src="https://edu.sqi.ng/wp-content/uploads/2023/03/Andela-log-landscape-blue-400px.png" alt="" width="150" height="100">
+    <img src="https://edu.sqi.ng/wp-content/uploads/2023/03/Microsoft_logo.png" alt="" width="150" height="100">
+</div>
+<div class="img4">
+    <img src="https://edu.sqi.ng/wp-content/uploads/2023/03/Paystack.png" alt="" width="150" height="100">
+    <img src="https://edu.sqi.ng/wp-content/uploads/2023/03/brewery.png" alt="" width="150" height="100">
+    <img src="https://edu.sqi.ng/wp-content/uploads/2023/03/Wema-Bank-Logo.png" alt="" width="150" height="100">
+    <img src="https://edu.sqi.ng/wp-content/uploads/2023/03/clan-logo.png" alt="" width="150" height="100">
+</div>
+<div class="img5">
+    <img src="https://edu.sqi.ng/wp-content/uploads/2023/03/edozzier.png" alt="" width="150" height="100">
+    <img src="https://edu.sqi.ng/wp-content/uploads/2023/03/moneymie.png" alt="" width="150" height="100">
+    <img src="https://edu.sqi.ng/wp-content/uploads/2023/03/Nigerian_Army.png" alt="" width="150" height="100">
+    <img src="https://edu.sqi.ng/wp-content/uploads/2023/03/aella-credit.png" alt="" width="150" height="100">
+</div>
+
+<div class="tour">
+    <div>
+    <video width="300" height="300" controls>
+        <source src="https://youtu.be/HgC6bjMbqpw" type="video/mp4"controls></video>     
+</div>
+<div class="tourr">
+    <h1 style="color: #FFFFFF;font-family: sans-serif;font-size: 48px;">Take a Tour</h1>
+    <p>Our campus is a living centre for innovation and creativity for sustainability.<br> We love showing students our campus and allowing them to see, hear and feel<br> the excitement that comes with being part of the Central community which is<br> an atmosphere that is open-minded, always exciting, and filled with academic<br> excellence.</p>
+<button style="width: 100px;height: 50px; border-radius: 20px; background-color: #0b08d1; color: #FFFFFF;font-family: sans-serif;">Apply now</button>
+</div>
+</div>
+
+<div class="testi">
+<h2>Testimonials</h2>
+<p>Read what our current students and alumni have to say about their SQI<br> experience.</p>
+</div>
+
+<div class="sqi">
+    <div>
+   <img src="https://lh3.googleusercontent.com/places/AAcXr8o3QIDwJ6rZBswrekAOU16lGdxZTU6hVAbrHfF33yW9DLiOxUHGH4Xw_iG3njJpZ-bjT8tQeeb-Dr_JDXt3frw66HapCb1NkJ4=s1600-w300-h300" alt="" width="100" height="100"> 
+<p><b>SQI College of ICT IBADAN</b></p>
+<p>Based on 84 reviews</p>
+<p>powered by Google</p>
+</div>
+<div>
+    <img src="https://lh3.googleusercontent.com/a/AATXAJxfOQSATjTc1-kV8LVla7Pf0JKT9cJyq4oOjUX1=s128-c0x00000000-cc-rp-mo" alt="" width="100" height="100">
+<p>Coming to SQI has made me believe that life<br> has more to offer.<br>
+Talking about being experienced in ICT<br> rapidly, SQI deserves uncountable<br> recommendations.<br>
+Thank u SQI for making me believe more in<br> myself, thanks for bringing out some qualities<br> that I'll never think of years to come in my life.<br>
+My heart is full of gratitude</p>
+</div>
+<div>
+    <img src="https://lh3.googleusercontent.com/a-/AOh14GjBzR2k6b4lPypTKucRW-ojHCsN0YKKyBBDBipW9A=s128-c0x00000000-cc-rp-mo" alt="" width="100" height="100">
+<p>It's an awesome place to learn. It has a serene<br> environment, the tutors are friendly and very<br> explanatory. I really love the place</p>
+</div>
+</div>
+
+
+<div class="learn">
+    <div>
+        <h2 style="color: 
+#333333; font-size: 38px;font-family: sans-serif;font-weight: 600;">Why study at SQI?</h2>
+    <p></p>
+    <h3>Project Based Learning</h3>
+    <p>Our courses are practical,<br> hands-on learning. Practice and<br> apply knowledge with real world<br> projects that contribute largely<br> to your portfolio.</p>
+   </div>
+   <div>
+    <p></p>
+    <h3>Expert Instructors</h3>
+    <p>Get to interact with different<br> mentors and draw from their<br> loads of experience.</p>
+   </div>
+    <div>
+    <img src="https://edu.sqi.ng/wp-content/uploads/2023/01/conference_image_15.jpg" alt=""  width="300" height="500">
+</div>
+</div>
+
+<div class="physical">
+    <div>
+    <p></p>
+    <h2>Physical & Virtual Class</h2>
+    <p>You can now choose physical class<br> experience or online classroom and learn<br> from anywhere in the world.</p>
+</div>
+<div>
+    <p></p>
+    <h2>Free access to our hub and<br> community</h2>
+    <p>You will have access to our fully functional<br> hub for co-working and working on projects,<br> assignments and even begin a start-up.</p>
+</div>
+</div>
+
+<div class="faq">
+    <div class="faqq">
+    <p>FAQ</p>
+    <h1>Frequently Asked <br>Questions</h1>
+    <br>
+    <a href="">Contact us</a>
+</div>
+<div class="faqqi">
+    <h5><hr>How do I get into the college</h5>
+    <p>We currently have 3 modes of study at SQI College of ICT, the<br> National Diploma, Professional Diploma Certificate, and<br> Ordinary Professional Certificate Program. You can join us by<br> applying through any of the modes of study.</u></p>
+<h5><hr>How much is the tution?</h5>
+<h5><hr>Are your classes physical or virtual</h5>
+<h5><hr>Will I get a job after my training?</h5>
+<hr style="color: chocolate;">
+</div>
+</div>
+
+<div class="join">
+<div>
+    <h4>It’s time for you to take your tech career to the next level</h4>
+    <h2>Ready to Get Started?</h2>
+    <p>We provide and lead others in quality education, service, industry, and<br> character as well as discipline.</p>
+<button style="width: 100px;height: 50px; border-radius: 20px;">join us today</button>
+</div>
+</div>
+
+<div class="latest">
+<h2>Latest News</h2>
+<button style="width: 100px;height: 50px; border-radius: 20px;">Read more</button>
+</div>
+
+<div class="student">
+<div class="stud">
+   <img src="https://sqi.edu.ng/wp-content/uploads/2025/05/SQI_8351-400x250.jpg" alt="" width="300" height="300">
+   <h4>Students embrace new opportunities with<br> matriculation at SQI College of ICT</h4>
+   <p>May 5, 2025</p>
+   <p>SQI College of ICT, Ogbomoso, on<br> Saturday, May 3, 2025, held its 6th<br> Matriculation Ceremony for the 2024/2025<br> academic session. The vibrant ceremony,<br> held at the college’s main auditorium,<br> brought together dignitaries from the<br> education sector, traditional rulers,...</p>
+</div>
+
+<div class="studd">
+<img src="https://sqi.edu.ng/wp-content/uploads/2025/03/Java-engineers-400x250.jpg" alt="" width="300" height="300">
+<h4>Building the Next Army of Java Generals</h4>
+<p>Mar 21, 2025</p>
+<p>Moniepoint recently received significant<br> seed funding, enabling them to recruit a<br> large number of Java developers at<br> unprecedented salaries (₦1.5m – ₦2.5m<br> monthly). While this is great news for<br> those developers, it has left many<br> financial institutions—especially banks<br>—with a shortage of capable Java<br> developers…</p>
+</div>
+
+<div class="studdd">
+    <img src="https://sqi.edu.ng/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-18-at-15.35.16_a7626ca6-400x250.jpg" alt="" width="300" height="300">
+<h4>JAMB subject combination for 2025<br> admission into SQI College of ICT</h4>
+<p>Feb 18, 2025</p>
+<p>A common reason JAMB UTME candidates<br> are denied admission is the wrong<br> combination of subjects. Our goal here is<br> to help you avoid this mistake.<br> Specifically, this post highlights the JAMB<br> subject combinations for JAMB subject<br> combination for 2025 admission into SQI...</p>
+<br>
+<br>
+</div>
+</div>
+
+
+<div class="footer">
+<div>
+    <h3>Hello, we’re SQI<br> College of ICT</h3>
+    <h4>We provide and lead<br> others in quality ICT<br> education.</h4>
+</div>
+<div>
+    <h6>Quick Links</h6>
+    <p>Application Portal</p>
+    <p>Student Portal</p>
+    <p>Professional Courses</p>
+    <p>NID Courses</p>
+    <p>Campus Info</p>
+    <p>Accomodation</p>
+    <p>SQI Scholarship</p>
+    <p>SQI Anthem</p>
+    <p>Donate</p>
+</div>
+<div>
+    <h6>Ogbomoso</h6>
+    <p>Old Ilorin Road,<br>
+Opposite Yoaco Filling<br> Station,<br>
+Yoaco, Ogbomoso.</p>
+<p><b>0906 281 9991, 0906 281<br> 9993</b></p>
+<p>Locate on the map</p>
+</div>
+<div>
+    <h6>Ibadan</h6>
+    <p>First Floor, H25 Heritage<br> Mall,<br>
+Opposite Central Bank<br> of Nigeria,<br>
+Dugbe, Ibadan.</p>
+<p><b>0906 281 9994</b></p>
+<p>Locate on the map</p>
+<p>Christianah Oyinade<br> Ajoke House, beside<br> First Bank, Arisekola<br> Central Mosque,<br> Opposite Jaiz bank, Idi<br> Ape, Iwo road, Ibadan.</p>
+<p><b>0906 281 9995</b></p>
+<p>Locate on the map</p>
+<p>Haier Thermocool<br> Building, opposite SAO<br> filling station,<br> Challenge, Ibadan, Oyo<br> State.</p>
+</div>
+<div>
+    <h6>Abeokuta</h6>
+    <p>First floor, OPIC Tower<br> building, Okeilewo,<br> Abeokuta.</p>
+    <p><b>0906 281 9996</b></p>
+    <p>Locate on the map</p>
+    <p>Osogbo</p>
+    <p>Opposite Jaiz bank,<br> Ogo-Oluwa, Osogbo</p>
+    <p><b>0906 281 9997</b></p>
+    <p>Locate on the map</p>
+    <p>Abuja</p>
+    <p>Suite Banking Hall SF,<br> Febson Mall,<br>
+Wuse Zone 4, Abuja</p>
+<p><b>090 628 20000</b></p>
+<p>Locate on the map</p>
+</div>
+</div>
+
+<div class="diva">
+<div>Copyright © 2025 | SQI ICT Consultants. All Rights Reserved.</div>
+</div>
+
+<div>
+    <img style="width: 50px; position: fixed; bottom: 10px; left: 30px;" src="data:image/jpeg;base64,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" alt="">
+</div>
+
+
+
+<div class="aro">
+ <a href="#top">&uarr;</a>
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+    </body>
+</html>
